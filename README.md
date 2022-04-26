@@ -17,7 +17,7 @@ There are more functions:
 - windowname
 - savechart (my personal favorite)
 
-Plus 1 class:
+Plus 1 class:\
 Mover
 - obj
 - rootobj
