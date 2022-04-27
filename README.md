@@ -18,7 +18,7 @@ There are more functions:
 - savechart (my personal favorite)
 
 Plus 1 class:\
-Mover
+Mover:
 - obj
 - rootobj
 
