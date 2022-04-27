@@ -388,11 +388,11 @@ def savechart(thefilename: str, width='defult', height='defult'):
       pass
   if width == 'defult' and height == 'defult' or width == 'defult' and height != 'defult' or width != 'defult' and height == 'defult':
     screen.getcanvas().postscript(file=thefilename)
-  elif width != 0 and height != 0:
+  elif width != 'defult' and height != 'defult':
         screen.getcanvas().postscript(file=thefilename, width=width, height=height)
   book = open(thefilename, 'r').read()
   with open(thefilename, 'w') as savedfile:
-    savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))
+    savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))  # Being picky here
   
   
 class Mover(_root.Turtle):
