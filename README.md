@@ -26,7 +26,7 @@ Mover:
 # Installation
 To install pytchart:
 - git clone https://github.com/zachyboy12/pytchart.git
-- Go to releases and either choose the zip file or the tar.gz file
+- Go to releases and assets and either choose the zip file or the tar.gz file
 
 # Documentation
 Documentation coming soon!
