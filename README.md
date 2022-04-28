@@ -31,4 +31,7 @@ To install pytchart:
 # Documentation
 Documentation coming soon!
 
+Issues?
+Go to https://github.com/zachyboy12/pytchart/issues
+
 Thank you for looking at pytchart!
