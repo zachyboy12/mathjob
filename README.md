@@ -1,4 +1,5 @@
 # pytchart
+# Intro
 A random-based, easy and customizable chart-maker.
 There are 5 kinds of graphs here, which are:
 - line graph
@@ -21,5 +22,14 @@ Plus 1 class:\
 Mover:
 - obj
 - rootobj
+
+# Installation
+To install pytchart:
+- git clone https://github.com/zachyboy12/pytchart.git
+- Go to releases and either choose the zip file or the tar.gz file
+
+# Documentation
+Documentation coming soon!
+
 
 Thank you for looking at pytchart!
