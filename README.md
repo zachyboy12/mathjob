@@ -31,7 +31,4 @@ To install pytchart:
 # Documentation
 Documentation coming soon!
 
-
-
-
 Thank you for looking at pytchart!
