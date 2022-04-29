@@ -10,7 +10,7 @@ def demo1():
     pytchart.texttag('Things I think about', 'light pink', ('Arial', 12, 'bold'), (0, -100))
     pytchart.texttag('Green - programming    Blue - Nintendo    Pink - Other', 'light green', ('Arial', 9, 'normal'), (0, 150))
     pytchart.savechart('thisisanexample')
-    pytchart.screenloop()
+    pytchart.renderchart()
 
 
 def demo2():
@@ -22,7 +22,7 @@ def demo2():
     pytchart.linegraph('light green', 0.070, 10, 1000, 10, 10, (-80, -200))
     pytchart.linegraph('light pink', 0.070, 10, 1000, 10, 10, (-80, -200))
     pytchart.savechart('thisisanexample')
-    pytchart.screenloop()
+    pytchart.renderchart()
 
 
 def demo3():
@@ -32,7 +32,7 @@ def demo3():
     pytchart.texttag('My life', 'light pink', ('Arial', 20, 'bold'), (0, -100))
     pytchart.texttag('Blue - Eat    Pink - Other', 'light green', ('Arial', 13, 'normal'), (0, 150))
     pytchart.savechart('thisisanexample')
-    pytchart.screenloop()
+    pytchart.renderchart()
 
 
 def demo4():
@@ -41,7 +41,7 @@ def demo4():
     pytchart.texttag('Money made by a company in ten days', 'light pink',
     ('Arial', 15, 'bold'), (5, 200))
     pytchart.savechart('thisisanexample')
-    pytchart.screenloop()
+    pytchart.renderchart()
 
 
 def demo5():
@@ -51,5 +51,6 @@ def demo5():
         pytchart.delay(3)
         pytchart.clearall()
         os.system('clear')
+        
         
 # Check the demos by calling them
