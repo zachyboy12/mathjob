@@ -51,3 +51,5 @@ def demo5():
         pytchart.delay(3)
         pytchart.clearall()
         os.system('clear')
+        
+# Check the demos by calling them
