@@ -4,7 +4,7 @@
   make a chart very customizable.
   No modules to manually install or complex function names to make the person 
   have fun.
-  Version 0.1
+  v0.1.0
 """
 
 
@@ -20,6 +20,7 @@ s.title('Pytchart')
 def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=10, startcoor=(0, 0)):
   """
   Generates a line graph (obviously).
+
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -28,6 +29,7 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+
   returns:
       str, int: The id of the graph (this one is 22)
   """
@@ -47,13 +49,13 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
     y.fd(10)
     y.lt(45)
     ra = rint(low, high)
-  s.update()
   return ["<class 'pytchart'>", 0.11 * 2]
   
   
 def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=20, startcoor=(0, 0)):
   """
   Generates a bar graph (obviously).
+
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -62,6 +64,7 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+
   returns:
       str, int: The id of the graph (this one is 44)
   """
@@ -84,13 +87,13 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
     y.lt(90)
     y.pendown()
     ra = rint(low, high)
-  s.update()
   return ["<class 'pytchart'>", 0.22 * 2]
   
   
 def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=40, startcoor=(0, 0)):
   """
   Generates a histogram (obviously).
+
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -99,6 +102,7 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+
   returns:
       str, int: The id of the graph (this one is 66)
   """
@@ -119,13 +123,13 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
     y.fd(2.5)
     y.lt(90)
     ra = rint(low, high)
-  s.update()
   return ["<class 'pytchart'>", 0.33 * 2]
   
   
 def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=10, linelength=510, startcoor=(0, 0)):
   """
   Generates a bubble graph (obviously).
+
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -135,6 +139,7 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       linelength (int, optional): The length of the line. Defaults to 510.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+
   returns:
       str, int: The id of the graph (this one is 88)
   """
@@ -158,7 +163,6 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
     y.fd(10)
     y.lt(45)
     ra = rint(low, high)
-  s.update()
   print('Chart initialized')
   print('App initialized: true')
   print('Setttings init;')
@@ -176,6 +180,7 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
 def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=10, times=10, startcoor=(0, 0)):
   """
   Generates a side bar graph (obviously) from the left to the right.
+
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -184,6 +189,7 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+
   returns:
       str, int: The id of the graph (this one is 99)
   """
@@ -205,13 +211,13 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
     y.lt(90)
     y.pendown()
     ra = rint(low, high)
-  s.update()
   return ["<class 'pytchart'>", 0.55 * 2]
 
 
 def randomgraph(color: str, pxperstep: int or float, linesize: int or float, high: int or float, low: int or float, times: int, linelength: int or float, startcoor: tuple or list):
   """
   Generates a random kind of graph (obviously).
+
   Args:
       color (str): The color of the graph.
       pxperstep (int or float): How far the drawer moves per 1 step.
@@ -238,8 +244,10 @@ def randomgraph(color: str, pxperstep: int or float, linesize: int or float, hig
 def examplesofchartsfrompytchart(print_or_return='print'):
   """
   Gives example of charts from this module.
+
   Args:
       print_or_return (str, optional): Either prints the results or returns it. Defaults to 'print'.
+
   returns:
       str: Examples of charts from module.
   """
@@ -265,11 +273,13 @@ def examplesofchartsfrompytchart(print_or_return='print'):
 def texttag(text: str or int or float or list or tuple or bool, color: str, font: tuple or list, coordinates: tuple or list):
   """
   Function to show text.
+
   Args:
       text (str or int or float or list or tuple or bool): Text to be displayed on screen.
       color (str): Color of message.
       font (tuple or list): Font of message.
       coor (tuple or list): Coordinates of text.
+
   returns:
       str, int: The id of the function (this one is 1.32)
   """
@@ -280,18 +290,19 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
   t.goto(coordinates)
   t.pendown()
   t.write(text, False, 'center', font)
-  s.update()
   return ["<class 'pytchart'>", 0.66 * 2, text]
   
   
 def box(squarelength: int or float, linesize: int or float, color: str, startcoor: tuple or list):
   """
   Function to create a box.
+
   Args:
       squarelength (int or float): Length of square
       linesize (int or float): linesize of border
       color (str): Color of border
       startcoor (tuple or list): 
+
   returns:
       str, int: The id of the function (this one is 1.54)
   """
@@ -308,13 +319,13 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
   for i in range(4):
     t.fd(sl)
     t.rt(90)
-  s.update()
   return ["<class 'pytchart'>", 0.77 * 2]
 
 
 def clearall():
   """
   Clears everything in the screen.
+
   returns:
       str, int: The id of the function (this one is 1.98)
   """
@@ -322,12 +333,14 @@ def clearall():
   return ["<class 'pytchart'>", 0.99 * 2]
 
 
-def screenloop():
+def renderchart():
   """
-  Loops the screen.
+  Renders the chart.
+
   Returns:
       str, int: The id of the function
   """
+  s.update()
   s.mainloop()
   return ["<class 'pytchart'>", 0.108 * 2]
 
@@ -335,8 +348,10 @@ def screenloop():
 def windowname(thename: str):
   """
   Adds the parameter's argument to the window's name.
+
   Args:
       thename (str): Window name
+
   returns:
       str, int: The id of the function
   """
@@ -347,6 +362,7 @@ def windowname(thename: str):
 def savechart(thefilename: str, width='defult', height='defult'):
   """
   Saves the graph from the screen.
+
   Args:
       thefilename (str): File name to save image as
       width (int or float, optional): Width of saved graph
@@ -359,26 +375,24 @@ def savechart(thefilename: str, width='defult', height='defult'):
     pass
   if thefilename.find('.') != -1:
     if ex != 'ps' and ex is not None:
-          if ex == 'eps':
-                pass
-          else:
-            raise Exception('No ps or eps extension. Cannot use any other extension')
+          raise Exception('No ps extension. Cannot use any other extension')
     elif ex is None:
           pass
   else:
       pass
   if width == 'defult' and height == 'defult' or width == 'defult' and height != 'defult' or width != 'defult' and height == 'defult':
     screen.getcanvas().postscript(file=thefilename)
-  elif width != 'defult' and height != 'defult':
+  elif width != 0 and height != 0:
         screen.getcanvas().postscript(file=thefilename, width=width, height=height)
   book = open(thefilename, 'r').read()
   with open(thefilename, 'w') as savedfile:
-    savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))  # Being picky here
+    savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))
   
   
 class Mover(_root.Turtle):
   """
   Class to move an object
+
   Args:
       r (module): Turtle module
   """
