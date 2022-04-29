@@ -24,7 +24,7 @@ Mover:
 - rootobj
 
 # Installation
-To install pytchart:
+To install pytchart there are two options:
 - git clone https://github.com/zachyboy12/pytchart.git
 - Go to releases and assets and either choose the zip file or the tar.gz file
 
