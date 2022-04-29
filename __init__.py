@@ -20,7 +20,6 @@ s.title('Pytchart')
 def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=10, startcoor=(0, 0)):
   """
   Generates a line graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -29,7 +28,6 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 22)
   """
@@ -56,7 +54,6 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
 def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=20, startcoor=(0, 0)):
   """
   Generates a bar graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -65,7 +62,6 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 44)
   """
@@ -95,7 +91,6 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
 def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=40, startcoor=(0, 0)):
   """
   Generates a histogram (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -104,7 +99,6 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 66)
   """
@@ -132,7 +126,6 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
 def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=10, linelength=510, startcoor=(0, 0)):
   """
   Generates a bubble graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -142,7 +135,6 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
       times (int, optional): How many times the it will draw lines in a chart. Defaults to 10.
       linelength (int, optional): The length of the line. Defaults to 510.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 88)
   """
@@ -184,7 +176,6 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
 def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=10, times=10, startcoor=(0, 0)):
   """
   Generates a side bar graph (obviously) from the left to the right.
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -193,7 +184,6 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times it will draw lines in a chart. Defaults to 10.
       startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 99)
   """
@@ -222,7 +212,6 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
 def randomgraph(color: str, pxperstep: int or float, linesize: int or float, high: int or float, low: int or float, times: int, linelength: int or float, startcoor: tuple or list):
   """
   Generates a random kind of graph (obviously).
-
   Args:
       color (str): The color of the graph.
       pxperstep (int or float): How far the drawer moves per 1 step.
@@ -249,10 +238,8 @@ def randomgraph(color: str, pxperstep: int or float, linesize: int or float, hig
 def examplesofchartsfrompytchart(print_or_return='print'):
   """
   Gives example of charts from this module.
-
   Args:
       print_or_return (str, optional): Either prints the results or returns it. Defaults to 'print'.
-
   returns:
       str: Examples of charts from module.
   """
@@ -278,13 +265,11 @@ def examplesofchartsfrompytchart(print_or_return='print'):
 def texttag(text: str or int or float or list or tuple or bool, color: str, font: tuple or list, coordinates: tuple or list):
   """
   Function to show text.
-
   Args:
       text (str or int or float or list or tuple or bool): Text to be displayed on screen.
       color (str): Color of message.
       font (tuple or list): Font of message.
       coor (tuple or list): Coordinates of text.
-
   returns:
       str, int: The id of the function (this one is 1.32)
   """
@@ -302,13 +287,11 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
 def box(squarelength: int or float, linesize: int or float, color: str, startcoor: tuple or list):
   """
   Function to create a box.
-
   Args:
       squarelength (int or float): Length of square
       linesize (int or float): linesize of border
       color (str): Color of border
       startcoor (tuple or list): 
-
   returns:
       str, int: The id of the function (this one is 1.54)
   """
@@ -332,7 +315,6 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
 def clearall():
   """
   Clears everything in the screen.
-
   returns:
       str, int: The id of the function (this one is 1.98)
   """
@@ -343,7 +325,6 @@ def clearall():
 def screenloop():
   """
   Loops the screen.
-
   Returns:
       str, int: The id of the function
   """
@@ -354,10 +335,8 @@ def screenloop():
 def windowname(thename: str):
   """
   Adds the parameter's argument to the window's name.
-
   Args:
       thename (str): Window name
-
   returns:
       str, int: The id of the function
   """
@@ -368,7 +347,6 @@ def windowname(thename: str):
 def savechart(thefilename: str, width='defult', height='defult'):
   """
   Saves the graph from the screen.
-
   Args:
       thefilename (str): File name to save image as
       width (int or float, optional): Width of saved graph
@@ -380,8 +358,11 @@ def savechart(thefilename: str, width='defult', height='defult'):
   except IndexError:
     pass
   if thefilename.find('.') != -1:
-    if ex != 'ps' or 'eps' and ex is not None:
-          raise Exception('No ps or eps extension. Cannot use any other extension')
+    if ex != 'ps' and ex is not None:
+          if ex == 'eps':
+                pass
+          else:
+            raise Exception('No ps or eps extension. Cannot use any other extension')
     elif ex is None:
           pass
   else:
@@ -398,7 +379,6 @@ def savechart(thefilename: str, width='defult', height='defult'):
 class Mover(_root.Turtle):
   """
   Class to move an object
-
   Args:
       r (module): Turtle module
   """
