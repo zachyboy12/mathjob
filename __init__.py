@@ -380,8 +380,8 @@ def savechart(thefilename: str, width='defult', height='defult'):
   except IndexError:
     pass
   if thefilename.find('.') != -1:
-    if ex != 'ps' and ex is not None:
-          raise Exception('No ps extension. Cannot use any other extension')
+    if ex != 'ps' or 'eps' and ex is not None:
+          raise Exception('No ps or eps extension. Cannot use any other extension')
     elif ex is None:
           pass
   else:
