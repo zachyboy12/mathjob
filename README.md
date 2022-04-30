@@ -14,7 +14,7 @@ There are more functions:
 - texttag
 - box
 - clearall
-- renderchart
+- screenloop
 - windowname
 - savechart (my personal favorite)
 
