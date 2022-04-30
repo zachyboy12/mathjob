@@ -333,9 +333,9 @@ def clearall():
   return ["<class 'pytchart'>", 0.99 * 2]
 
 
-def renderchart():
+def screenloop():
   """
-  Renders the chart.
+  Loops the screen.
 
   Returns:
       str, int: The id of the function
