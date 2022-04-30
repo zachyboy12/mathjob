@@ -239,7 +239,7 @@ def randomgraph(color: str, pxperstep: int or float, linesize: int or float, hig
     bubblegraph(color, pxperstep, linesize, high, low, times, linelength, startcoor)
   
   
-def examplesofchartsfrompytchart(p__rint_or_return='p__rint'):
+def examplesofchartsfrompytchart(print_or_return='print'):
   """
   Gives example of charts from this module.
 
@@ -249,7 +249,7 @@ def examplesofchartsfrompytchart(p__rint_or_return='p__rint'):
   returns:
       str: Examples of charts from module.
   """
-  if p__rint_or_return == 'p__rint':
+  if print_or_return == 'p__rint':
     print('''Instructions:
 1 - linegraph(): see https://www.howtogeek.com/wp-content/uploads/2021/11/GoogleSheetsLineChart.png?width=1198&trim=1,1&bg-color=000&pad=1,1 for example
 2 - bargraph(): see https://www.math-only-math.com/images/representation-bar-graph.png for example
@@ -258,7 +258,7 @@ def examplesofchartsfrompytchart(p__rint_or_return='p__rint'):
 5 - sidebargraph(): see https://depictdatastudio.com/wp-content/uploads/2017/01/Depict-Data-Studio_Bar-Charts_Vertical-or-Horizontal_Horizontal-1.jpg for example
 6 - mover(): mover.obj() returns a turtle object; rootobj() returns the turtle module''')
     return "<class 'instructions'>"
-  elif p__rint_or_return == 'return':
+  elif print_or_return == 'return':
     return '''Instructions:
 1 - linegraph(): see https://www.howtogeek.com/wp-content/uploads/2021/11/GoogleSheetsLineChart.png?width=1198&trim=1,1&bg-color=000&pad=1,1 for example
 2 - bargraph(): see https://www.math-only-math.com/images/representation-bar-graph.png for example
