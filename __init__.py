@@ -8,11 +8,11 @@
 """
 
 
-import turtle as _root
+import turtle as __root
 from turtle import title
 from random import randint as rint
 from time import sleep as delay
-screen = _root.Screen()
+screen = __root.Screen()
 s = screen
 s.title('Pytchart')
 
@@ -33,7 +33,7 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
   returns:
       str, int: The id of the graph (this one is 22)
   """
-  y = _root.Turtle('circle')
+  y = __root.Turtle('circle')
   y.hideturtle()
   ra = rint(low, high)
   y.pensize(linesize)
@@ -68,7 +68,7 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
   returns:
       str, int: The id of the graph (this one is 44)
   """
-  y = _root.Turtle('circle')
+  y = __root.Turtle('circle')
   ra = rint(low, high)
   y.pensize(linesize)
   y.color(color)
@@ -106,7 +106,7 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
   returns:
       str, int: The id of the graph (this one is 66)
   """
-  y = _root.Turtle('circle')
+  y = __root.Turtle('circle')
   ra = rint(low, high)
   y.pensize(linesize)
   y.color(color)
@@ -143,7 +143,7 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
   returns:
       str, int: The id of the graph (this one is 88)
   """
-  y = _root.Turtle('circle')
+  y = __root.Turtle('circle')
   y.shape('circle')
   ra = rint(low, high)
   y.color(color)
@@ -193,7 +193,7 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
   returns:
       str, int: The id of the graph (this one is 99)
   """
-  y = _root.Turtle('circle')
+  y = __root.Turtle('circle')
   y.hideturtle()
   ra = rint(low, high)
   y.pensize(linesize)
@@ -283,7 +283,7 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
   returns:
       str, int: The id of the function (this one is 1.32)
   """
-  t = _root.Turtle()
+  t = __root.Turtle()
   t.hideturtle()
   t.color(color)
   t.penup()
@@ -307,7 +307,7 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
       str, int: The id of the function (this one is 1.54)
   """
   sl = squarelength
-  t = _root.Turtle()
+  t = __root.Turtle()
   s.tracer(0)
   t.color(color)
   t.pensize(linesize)
@@ -333,9 +333,9 @@ def clearall():
   return ["<class 'pytchart'>", 0.99 * 2]
 
 
-def screenloop():
+def renderchart():
   """
-  Loops the screen.
+  Renders the chart.
 
   Returns:
       str, int: The id of the function
@@ -389,7 +389,7 @@ def savechart(thefilename: str, width='defult', height='defult'):
     savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))
   
   
-class Mover(_root.Turtle):
+class Mover(__root.Turtle):
   """
   Class to move an object
 
@@ -403,8 +403,9 @@ class Mover(_root.Turtle):
   
   
   def obj(self):
-    return _root.Turtle()
+    return __root.Turtle()
     
     
   def rootobj(self):
-    return _root
+    return __root
+
