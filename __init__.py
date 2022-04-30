@@ -9,12 +9,10 @@
 
 
 import turtle as __root
-from turtle import title
-from random import randint as rint
+from random import randint as __rint
 from time import sleep as delay
 screen = __root.Screen()
-s = screen
-s.title('Pytchart')
+screen.title('Pytchart')
 
 
 def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10, times=10, startcoor=(0, 0)):
@@ -35,11 +33,11 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
   """
   y = __root.Turtle('circle')
   y.hideturtle()
-  ra = rint(low, high)
+  ra = __rint(low, high)
   y.pensize(linesize)
   y.penup()
   y.color(color)
-  s.tracer(25)
+  screen.tracer(25)
   y.goto(startcoor)
   y.lt(45)
   y.pendown()
@@ -48,7 +46,7 @@ def linegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
     y.rt(45)
     y.fd(10)
     y.lt(45)
-    ra = rint(low, high)
+    ra = __rint(low, high)
   return ["<class 'pytchart'>", 0.11 * 2]
   
   
@@ -69,10 +67,10 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
       str, int: The id of the graph (this one is 44)
   """
   y = __root.Turtle('circle')
-  ra = rint(low, high)
+  ra = __rint(low, high)
   y.pensize(linesize)
   y.color(color)
-  s.tracer(25)
+  screen.tracer(25)
   y.hideturtle()
   y.penup()
   y.goto(startcoor)
@@ -86,7 +84,7 @@ def bargraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10,
     y.fd(10)
     y.lt(90)
     y.pendown()
-    ra = rint(low, high)
+    ra = __rint(low, high)
   return ["<class 'pytchart'>", 0.22 * 2]
   
   
@@ -107,10 +105,10 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
       str, int: The id of the graph (this one is 66)
   """
   y = __root.Turtle('circle')
-  ra = rint(low, high)
+  ra = __rint(low, high)
   y.pensize(linesize)
   y.color(color)
-  s.tracer(100)
+  screen.tracer(100)
   y.hideturtle()
   y.penup()
   y.goto(startcoor)
@@ -122,7 +120,7 @@ def histogram(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=10
     y.rt(90)
     y.fd(2.5)
     y.lt(90)
-    ra = rint(low, high)
+    ra = __rint(low, high)
   return ["<class 'pytchart'>", 0.33 * 2]
   
   
@@ -145,9 +143,9 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
   """
   y = __root.Turtle('circle')
   y.shape('circle')
-  ra = rint(low, high)
+  ra = __rint(low, high)
   y.color(color)
-  s.tracer(25)
+  screen.tracer(25)
   y.penup()
   y.goto(startcoor)
   y.lt(45)
@@ -162,7 +160,7 @@ def bubblegraph(color='light blue', pxperstep=0.070, linesize=5, high=1000, low=
     y.rt(45)
     y.fd(10)
     y.lt(45)
-    ra = rint(low, high)
+    ra = __rint(low, high)
   print('Chart initialized')
   print('App initialized: true')
   print('Setttings init;')
@@ -195,10 +193,10 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
   """
   y = __root.Turtle('circle')
   y.hideturtle()
-  ra = rint(low, high)
+  ra = __rint(low, high)
   y.pensize(linesize)
   y.color(color)
-  s.tracer(25)
+  screen.tracer(25)
   y.penup()
   y.goto(startcoor)
   y.pendown()
@@ -210,7 +208,7 @@ def sidebargraph(color='light blue', pxperstep=0.70, linesize=8, high=1000, low=
     y.fd(20)
     y.lt(90)
     y.pendown()
-    ra = rint(low, high)
+    ra = __rint(low, high)
   return ["<class 'pytchart'>", 0.55 * 2]
 
 
@@ -228,7 +226,7 @@ def randomgraph(color: str, pxperstep: int or float, linesize: int or float, hig
       linelength (int or float): The length of the line.
       startcoor (tuple or list): Where the line graph's origin coordinates are.
   """
-  c = rint(1, 5)
+  c = __rint(1, 5)
   if c == 1:
     linegraph(color, pxperstep, linesize, high, low, times, startcoor)
   elif c == 2:
@@ -241,17 +239,17 @@ def randomgraph(color: str, pxperstep: int or float, linesize: int or float, hig
     bubblegraph(color, pxperstep, linesize, high, low, times, linelength, startcoor)
   
   
-def examplesofchartsfrompytchart(print_or_return='print'):
+def examplesofchartsfrompytchart(p__rint_or_return='p__rint'):
   """
   Gives example of charts from this module.
 
   Args:
-      print_or_return (str, optional): Either prints the results or returns it. Defaults to 'print'.
+      p__rint_or_return (str, optional): Either p__rints the results or returns it. Defaults to 'p__rint'.
 
   returns:
       str: Examples of charts from module.
   """
-  if print_or_return == 'print':
+  if p__rint_or_return == 'p__rint':
     print('''Instructions:
 1 - linegraph(): see https://www.howtogeek.com/wp-content/uploads/2021/11/GoogleSheetsLineChart.png?width=1198&trim=1,1&bg-color=000&pad=1,1 for example
 2 - bargraph(): see https://www.math-only-math.com/images/representation-bar-graph.png for example
@@ -260,7 +258,7 @@ def examplesofchartsfrompytchart(print_or_return='print'):
 5 - sidebargraph(): see https://depictdatastudio.com/wp-content/uploads/2017/01/Depict-Data-Studio_Bar-Charts_Vertical-or-Horizontal_Horizontal-1.jpg for example
 6 - mover(): mover.obj() returns a turtle object; rootobj() returns the turtle module''')
     return "<class 'instructions'>"
-  elif print_or_return == 'return':
+  elif p__rint_or_return == 'return':
     return '''Instructions:
 1 - linegraph(): see https://www.howtogeek.com/wp-content/uploads/2021/11/GoogleSheetsLineChart.png?width=1198&trim=1,1&bg-color=000&pad=1,1 for example
 2 - bargraph(): see https://www.math-only-math.com/images/representation-bar-graph.png for example
@@ -308,7 +306,7 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
   """
   sl = squarelength
   t = __root.Turtle()
-  s.tracer(0)
+  screen.tracer(0)
   t.color(color)
   t.pensize(linesize)
   t.hideturtle()
@@ -329,7 +327,7 @@ def clearall():
   returns:
       str, int: The id of the function (this one is 1.98)
   """
-  s.clear()
+  screen.clear()
   return ["<class 'pytchart'>", 0.99 * 2]
 
 
@@ -340,8 +338,8 @@ def renderchart():
   Returns:
       str, int: The id of the function
   """
-  s.update()
-  s.mainloop()
+  screen.update()
+  screen.mainloop()
   return ["<class 'pytchart'>", 0.108 * 2]
 
 
@@ -355,7 +353,7 @@ def windowname(thename: str):
   returns:
       str, int: The id of the function
   """
-  s.title(thename)
+  screen.title(thename)
   return ["<class 'pytchart'>", 122 * 2]
 
 
@@ -408,4 +406,3 @@ class Mover(__root.Turtle):
     
   def rootobj(self):
     return __root
-
