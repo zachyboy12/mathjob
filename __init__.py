@@ -385,24 +385,3 @@ def savechart(thefilename: str, width='defult', height='defult'):
   book = open(thefilename, 'r').read()
   with open(thefilename, 'w') as savedfile:
     savedfile.write(book.replace('%%Creator: Tk Canvas Widget', '%%Creator: pytchart'))
-  
-  
-class Mover(__root.Turtle):
-  """
-  Class to move an object
-
-  Args:
-      r (module): Turtle module
-  """
-  
-  
-  def __init__(self):
-    pass
-  
-  
-  def obj(self):
-    return __root.Turtle()
-    
-    
-  def rootobj(self):
-    return __root
