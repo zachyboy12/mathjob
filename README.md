@@ -18,16 +18,11 @@ There are more functions:
 - windowname
 - savechart (my personal favorite)
 
-Plus 1 class:\
-Mover:
-- obj
-- rootobj
-
 # Installation
 To install pytchart there are two options:
-- Copy paste this and put in terminal: git clone https://github.com/zachyboy12/pytchart.git \
+- git clone https://github.com/zachyboy12/pytchart.git \
 Or:
-- Go to https://github.com/zachyboy12/pytchart/releases/tag/Download and choose either the zip file or the tar.gz file
+- Go to https://github.com/zachyboy12/pytchart/releases/tag/ (add version number you want) and choose either the zip file or the tar.gz file
 
 # Documentation
 Documentation coming soon!
