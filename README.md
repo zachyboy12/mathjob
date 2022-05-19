@@ -1,4 +1,5 @@
 # pytchart
+PYTCHART
 # Intro
 A random-based, easy and customizable chart-maker.
 There are 5 kinds of graphs here, which are:
