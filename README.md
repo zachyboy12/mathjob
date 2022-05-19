@@ -1,5 +1,5 @@
 # pytchart
-![PYTCHART](https://user-images.githubusercontent.com/104463761/169385391-57b0c516-7b09-4499-8f8a-a9ffb4d76733.jpg)
+![PYTCHART](https://user-images.githubusercontent.com/104463761/169385843-2cf53afb-f327-4d7e-a0ba-d0ad6e3fad2b.jpg)
 # Intro
 A random-based, easy and customizable chart-maker.
 There are 5 kinds of graphs here, which are:
