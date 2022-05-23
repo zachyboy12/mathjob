@@ -288,6 +288,7 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
   t.goto(coordinates)
   t.pendown()
   t.write(text, False, 'center', font)
+  screen.update()
   return ["<class 'pytchart'>", 0.66 * 2, text]
   
   
@@ -317,6 +318,7 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
   for i in range(4):
     t.fd(sl)
     t.rt(90)
+  screen.update()
   return ["<class 'pytchart'>", 0.77 * 2]
 
 
@@ -331,14 +333,13 @@ def clearall():
   return ["<class 'pytchart'>", 0.99 * 2]
 
 
-def renderchart():
+def screenloop():
   """
-  Renders the chart.
+  Loops the screen.
 
   Returns:
       str, int: The id of the function
   """
-  screen.update()
   screen.mainloop()
   return ["<class 'pytchart'>", 0.108 * 2]
 
