@@ -4,7 +4,7 @@
   make a chart very customizable.
   No modules to manually install or complex function names to make the person 
   have fun.
-  v0.1.1
+  v0.1.2
 """
 
 
@@ -15,7 +15,7 @@ screen = __root.Screen()
 screen.title('Pytchart')
 
 
-def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoor=(0, 0)):
+def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a line graph (obviously).
 
@@ -23,7 +23,7 @@ def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the chart's line. Defaults to 5.
-      startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+      startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
 
   returns:
       str, int: The id of the graph (this one is 22)
@@ -34,7 +34,7 @@ def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
   y.penup()
   y.color(color)
   screen.tracer(25)
-  y.goto(startcoor)
+  y.goto(startcoordinates)
   y.lt(45)
   y.pendown()
   for data in datalist:
@@ -45,7 +45,7 @@ def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
   return ["<class 'pytchart'>", 0.11 * 2]
   
   
-def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoor=(0, 0)):
+def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a bar graph (obviously).
 
@@ -53,7 +53,7 @@ def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, st
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the graph's line. Defaults to 5.
-      startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+      startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
 
   returns:
       str, int: The id of the graph (this one is 44)
@@ -64,7 +64,7 @@ def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, st
   screen.tracer(25)
   y.hideturtle()
   y.penup()
-  y.goto(startcoor)
+  y.goto(startcoordinates)
   y.lt(90)
   y.pendown()
   for data in datalist:
@@ -78,7 +78,7 @@ def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, st
   return ["<class 'pytchart'>", 0.22 * 2]
   
   
-def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoor=(0, 0)):
+def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a histogram (obviously).
 
@@ -86,7 +86,7 @@ def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line linesize of the graph's line. Defaults to 5.
-      startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+      startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
 
   returns:
       str, int: The id of the graph (this one is 66)
@@ -97,7 +97,7 @@ def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
   screen.tracer(100)
   y.hideturtle()
   y.penup()
-  y.goto(startcoor)
+  y.goto(startcoordinates)
   y.lt(90)
   y.pendown()
   for data in datalist:
@@ -109,7 +109,7 @@ def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
   return ["<class 'pytchart'>", 0.33 * 2]
   
   
-def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, linelength=510, startcoor=(0, 0)):
+def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, linelength=510, startcoordinates=(0, 0)):
   """
   Generates a bubble graph (obviously).
 
@@ -118,7 +118,7 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the graph's line. Defaults to 5.
       linelength (int, optional): The length of the line. Defaults to 510.
-      startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+      startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
 
   returns:
       str, int: The id of the graph (this one is 88)
@@ -128,7 +128,7 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
   y.color(color)
   screen.tracer(25)
   y.penup()
-  y.goto(startcoor)
+  y.goto(startcoordinates)
   y.lt(45)
   y.pendown()
   y.pensize(linesize)
@@ -143,7 +143,7 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
     y.lt(45)
   
   
-def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8, startcoor=(0, 0)):
+def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8, startcoordinates=(0, 0)):
   """
   Generates a side bar graph (obviously) from the left to the right.
 
@@ -154,7 +154,7 @@ def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8,
       high (int, optional): The highest number the chart's random generator goes. Defaults to 1000.
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times it will draw lines in a chart. Defaults to 10.
-      startcoor (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
+      startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
 
   returns:
       str, int: The id of the graph (this one is 99)
@@ -165,7 +165,7 @@ def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8,
   y.color(color)
   screen.tracer(25)
   y.penup()
-  y.goto(startcoor)
+  y.goto(startcoordinates)
   y.pendown()
   for data in datalist:
     y.fd(pxperstep * data)
@@ -178,7 +178,7 @@ def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8,
   return ["<class 'pytchart'>", 0.55 * 2]
 
 
-def randomgraph(datalist: list, color: str, pxperstep: int or float, linesize: int or float, linelength: int or float, startcoor: tuple or list):
+def randomgraph(datalist: list, color: str, pxperstep: int or float, linesize: int or float, linelength: int or float, startcoordinates: tuple or list):
   """
   Generates a random kind of graph (obviously).
 
@@ -190,19 +190,19 @@ def randomgraph(datalist: list, color: str, pxperstep: int or float, linesize: i
       low (int or float): The lowest number the chart's random generator goes.
       times (int): How many times the it will draw lines in a chart.
       linelength (int or float): The length of the line.
-      startcoor (tuple or list): Where the line graph's origin coordinates are.
+      startcoordinates (tuple or list): Where the line graph's origin coordinates are.
   """
   c = __rint(1, 5)
   if c == 1:
-    linegraph(datalist, color, pxperstep, linesize, startcoor)
+    linegraph(datalist, color, pxperstep, linesize, startcoordinates)
   elif c == 2:
-    bargraph(datalist, color, pxperstep, linesize, startcoor)
+    bargraph(datalist, color, pxperstep, linesize, startcoordinates)
   elif c == 3:
-    histogram(datalist, color, pxperstep, linesize, startcoor)
+    histogram(datalist, color, pxperstep, linesize, startcoordinates)
   elif c == 4:
-    sidebargraph(datalist, color, pxperstep, linesize, startcoor)
+    sidebargraph(datalist, color, pxperstep, linesize, startcoordinates)
   elif c == 5:
-    bubblegraph(datalist, color, pxperstep, linesize, linelength, startcoor)
+    bubblegraph(datalist, color, pxperstep, linesize, linelength, startcoordinates)
   
   
 def examplesofchartsfrompytchart(print_or_return='print'):
@@ -258,7 +258,7 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
   return ["<class 'pytchart'>", 0.66 * 2, text]
   
   
-def box(squarelength: int or float, linesize: int or float, color: str, startcoor: tuple or list):
+def box(squarelength: int or float, linesize: int or float, color: str, startcoordinates: tuple or list):
   """
   Function to create a box.
 
@@ -266,7 +266,7 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
       squarelength (int or float): Length of square
       linesize (int or float): linesize of border
       color (str): Color of border
-      startcoor (tuple or list): 
+      startcoordinates (tuple or list): 
 
   returns:
       str, int: The id of the function (this one is 1.54)
@@ -278,7 +278,7 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
   t.pensize(linesize)
   t.hideturtle()
   t.penup()
-  t.goto(startcoor)
+  t.goto(startcoordinates)
   t.pendown()
   t.lt(90)
   for i in range(4):
