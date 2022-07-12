@@ -18,13 +18,11 @@ screen.title('Pytchart')
 def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a line graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the chart's line. Defaults to 5.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 22)
   """
@@ -42,21 +40,16 @@ def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
     y.rt(45)
     y.fd(10)
     y.lt(45)
-  return ["<class 'pytchart'>", 0.11 * 2]
   
   
 def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a bar graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the graph's line. Defaults to 5.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
-  returns:
-      str, int: The id of the graph (this one is 44)
   """
   y = __root.Turtle('circle')
   y.pensize(linesize)
@@ -75,21 +68,16 @@ def bargraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, st
     y.fd(10)
     y.lt(90)
     y.pendown()
-  return ["<class 'pytchart'>", 0.22 * 2]
   
   
 def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, startcoordinates=(0, 0)):
   """
   Generates a histogram (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line linesize of the graph's line. Defaults to 5.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
-  returns:
-      str, int: The id of the graph (this one is 66)
   """
   y = __root.Turtle('circle')
   y.pensize(linesize)
@@ -106,20 +94,17 @@ def histogram(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
     y.rt(90)
     y.fd(2.5)
     y.lt(90)
-  return ["<class 'pytchart'>", 0.33 * 2]
   
   
 def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, linelength=510, startcoordinates=(0, 0)):
   """
   Generates a bubble graph (obviously).
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the graph's line. Defaults to 5.
       linelength (int, optional): The length of the line. Defaults to 510.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
   returns:
       str, int: The id of the graph (this one is 88)
   """
@@ -146,7 +131,6 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
 def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8, startcoordinates=(0, 0)):
   """
   Generates a side bar graph (obviously) from the left to the right.
-
   Args:
       color (str, optional): The color of the graph. Defaults to 'light blue'.
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
@@ -155,9 +139,6 @@ def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8,
       low (int, optional): The lowest number the chart's random generator goes. Defaults to 10.
       times (int, optional): How many times it will draw lines in a chart. Defaults to 10.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-
-  returns:
-      str, int: The id of the graph (this one is 99)
   """
   y = __root.Turtle('circle')
   y.hideturtle()
@@ -175,13 +156,11 @@ def sidebargraph(datalist: list, color='light blue', pxperstep=0.70, linesize=8,
     y.fd(20)
     y.lt(90)
     y.pendown()
-  return ["<class 'pytchart'>", 0.55 * 2]
 
 
 def randomgraph(datalist: list, color: str, pxperstep: int or float, linesize: int or float, linelength: int or float, startcoordinates: tuple or list):
   """
   Generates a random kind of graph (obviously).
-
   Args:
       color (str): The color of the graph.
       pxperstep (int or float): How far the drawer moves per 1 step.
@@ -208,10 +187,8 @@ def randomgraph(datalist: list, color: str, pxperstep: int or float, linesize: i
 def examplesofchartsfrompytchart(print_or_return='print'):
   """
   Gives example of charts from this module.
-
   Args:
       p__rint_or_return (str, optional): Either p__rints the results or returns it. Defaults to 'p__rint'.
-
   returns:
       str: Examples of charts from module.
   """
@@ -237,15 +214,11 @@ def examplesofchartsfrompytchart(print_or_return='print'):
 def texttag(text: str or int or float or list or tuple or bool, color: str, font: tuple or list, coordinates: tuple or list):
   """
   Function to show text.
-
   Args:
       text (str or int or float or list or tuple or bool): Text to be displayed on screen.
       color (str): Color of message.
       font (tuple or list): Font of message.
       coor (tuple or list): Coordinates of text.
-
-  returns:
-      str, int: The id of the function (this one is 1.32)
   """
   t = __root.Turtle()
   t.hideturtle()
@@ -255,21 +228,16 @@ def texttag(text: str or int or float or list or tuple or bool, color: str, font
   t.pendown()
   t.write(text, False, 'center', font)
   screen.update()
-  return ["<class 'pytchart'>", 0.66 * 2, text]
   
   
 def box(squarelength: int or float, linesize: int or float, color: str, startcoordinates: tuple or list):
   """
   Function to create a box.
-
   Args:
       squarelength (int or float): Length of square
       linesize (int or float): linesize of border
       color (str): Color of border
       startcoordinates (tuple or list): 
-
-  returns:
-      str, int: The id of the function (this one is 1.54)
   """
   sl = squarelength
   t = __root.Turtle()
@@ -285,49 +253,36 @@ def box(squarelength: int or float, linesize: int or float, color: str, startcoo
     t.fd(sl)
     t.rt(90)
   screen.update()
-  return ["<class 'pytchart'>", 0.77 * 2]
 
 
 def clearall():
   """
   Clears everything in the screen.
-
-  returns:
-      str, int: The id of the function (this one is 1.98)
   """
   screen.clear()
-  return ["<class 'pytchart'>", 0.99 * 2]
 
 
-def screenloop():
+def start():
   """
-  Loops the screen.
+  Starts the screen.
 
-  Returns:
-      str, int: The id of the function
   """
   screen.mainloop()
-  return ["<class 'pytchart'>", 0.108 * 2]
 
 
 def windowname(thename: str):
   """
   Adds the parameter's argument to the window's name.
-
+  
   Args:
       thename (str): Window name
-
-  returns:
-      str, int: The id of the function
   """
   screen.title(thename)
-  return ["<class 'pytchart'>", 122 * 2]
 
 
 def savechart(thefilename: str, width='defult', height='defult'):
   """
   Saves the graph from the screen.
-
   Args:
       thefilename (str): File name to save image as
       width (int or float, optional): Width of saved graph
