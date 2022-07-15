@@ -1,6 +1,7 @@
 # Mathjob -- it does the math job for you
 A awesome module to get your hands dirty on machine learning.  
 It has all kinds of mathmatical technices.  
+POWERED BY C!
 # Esvier.Py+C
 A module for reading, writing, and predicting data from a CSV file.  
 # RPYC -- Random with Python + C
