@@ -23,8 +23,6 @@ def linegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5, s
       pxperstep (float, optional): How far the drawer moves per 1 step. Defaults to 0.070.
       linesize (int, optional): The line size of the chart's line. Defaults to 5.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-  returns:
-      str, int: The id of the graph (this one is 22)
   """
   y = __root.Turtle('circle')
   y.hideturtle()
@@ -105,8 +103,6 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
       linesize (int, optional): The line size of the graph's line. Defaults to 5.
       linelength (int, optional): The length of the line. Defaults to 510.
       startcoordinates (tuple, optional): Where the line graph's origin coordinates are. Defaults to (0, 0).
-  returns:
-      str, int: The id of the graph (this one is 88)
   """
   y = __root.Turtle('circle')
   y.shape('circle')
@@ -114,11 +110,12 @@ def bubblegraph(datalist: list, color='light blue', pxperstep=0.070, linesize=5,
   screen.tracer(25)
   y.penup()
   y.goto(startcoordinates)
-  y.lt(45)
+  y.setheading(sum(datalist) / len(datalist) - 30)
   y.pendown()
   y.pensize(linesize)
   y.fd(linelength)
   y.bk(linelength)
+  y.setheading(sum(datalist) / len(datalist))
   y.penup()
   for data in datalist:
     y.fd(pxperstep * data)
@@ -265,7 +262,6 @@ def clearall():
 def start():
   """
   Starts the screen.
-
   """
   screen.mainloop()
 
